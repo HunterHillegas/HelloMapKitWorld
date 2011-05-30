@@ -1,3 +1,9 @@
-This source code is a sample of how to use MapKit.
+This source code is a sample of how to use MapKit. Nothing fancy, just some demo / sample code.
 
-Nothing fancy, just some demo / sample code.
+This is a simple application that downloads some locations from a remote JSON file, parses them, inserts them into a Core Data database and then displays them on the map.
+
+This app only took me about 1.5 hours to put together. It's very straightforward.
+
+You can replace the constant that controls the JSON file location. The sample file is included in the package.
+
+This also includes some third party, OSS code. Be sure to adhere to whatever licenses they include.

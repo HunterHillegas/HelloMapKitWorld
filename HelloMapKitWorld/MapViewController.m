@@ -64,6 +64,10 @@
     self.locationMapView = nil;
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return YES;
+}
+
 - (void)populateMapWithLocations {
     [self.locationMapView addAnnotations:self.locations];
     

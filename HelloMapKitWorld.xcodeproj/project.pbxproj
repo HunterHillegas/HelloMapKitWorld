@@ -23,6 +23,7 @@
 		5A6E6E32139402A0005E94E2 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E26139402A0005E94E2 /* JSONKit.m */; };
 		5A6E6E33139402A0005E94E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E29139402A0005E94E2 /* MBProgressHUD.m */; };
 		5A6E6E37139402C3005E94E2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E36139402C3005E94E2 /* Reachability.m */; };
+		5A6E6E3A13940485005E94E2 /* FLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3913940485005E94E2 /* FLLocation.m */; };
 		5AD7EA801392E76B00039611 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD7EA7F1392E76B00039611 /* UIKit.framework */; };
 		5AD7EA821392E76B00039611 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD7EA811392E76B00039611 /* Foundation.framework */; };
 		5AD7EA841392E76B00039611 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD7EA831392E76B00039611 /* CoreGraphics.framework */; };
@@ -68,6 +69,8 @@
 		5A6E6E29139402A0005E94E2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		5A6E6E35139402C3005E94E2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5A6E6E36139402C3005E94E2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5A6E6E3813940485005E94E2 /* FLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLocation.h; sourceTree = "<group>"; };
+		5A6E6E3913940485005E94E2 /* FLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLocation.m; sourceTree = "<group>"; };
 		5AD7EA7B1392E76B00039611 /* HelloMapKitWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMapKitWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD7EA7F1392E76B00039611 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5AD7EA811392E76B00039611 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -232,6 +235,8 @@
 		5AD7EAA41392EA9F00039611 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A6E6E3813940485005E94E2 /* FLLocation.h */,
+				5A6E6E3913940485005E94E2 /* FLLocation.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				5A6E6E32139402A0005E94E2 /* JSONKit.m in Sources */,
 				5A6E6E33139402A0005E94E2 /* MBProgressHUD.m in Sources */,
 				5A6E6E37139402C3005E94E2 /* Reachability.m in Sources */,
+				5A6E6E3A13940485005E94E2 /* FLLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

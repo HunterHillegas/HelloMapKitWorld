@@ -259,7 +259,6 @@
 				5AD7EAA71392EAC200039611 /* Core Data */,
 				5A6E6E5A13940E45005E94E2 /* Protocols */,
 				5A6E6E3B1394077E005E94E2 /* Networking */,
-				5AD7EAA51392EAA700039611 /* Views */,
 				5AD7EAA41392EA9F00039611 /* Models */,
 				5AD7EAA61392EAAD00039611 /* Controllers */,
 				5AD7EAA81392EAD000039611 /* Misc */,
@@ -287,13 +286,6 @@
 				5A6E6E3913940485005E94E2 /* FLLocation.m */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		5AD7EAA51392EAA700039611 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		5AD7EAA61392EAAD00039611 /* Controllers */ = {

@@ -3,7 +3,7 @@
 //  HelloMapKitWorld
 //
 //  Created by Hunter Hillegas on 5/30/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Hunter Hillegas. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

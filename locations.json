@@ -1,0 +1,29 @@
+{
+    "locations": [
+        {
+            "name": "Foraker Office",
+            "latitude": "40.018947",
+            "longitude": "-105.238762"
+        },
+        {
+            "name": "Apple HQ",
+            "latitude": "37.330526",
+            "longitude": "-122.029093"
+        },
+        {
+            "name": "Mountain Sun Pub",
+            "latitude": "40.018911",
+            "longitude": "-105.275149"
+        },
+        {
+            "name": "Walnut Brewery",
+            "latitude": "40.016798",
+            "longitude": "-105.280387"
+        },
+        {
+            "name": "Twisted Pine",
+            "latitude": "40.020104",
+            "longitude": "-105.251395"
+        }
+    ]
+}

@@ -17,8 +17,9 @@
 @synthesize managedObjectModel=__managedObjectModel;
 @synthesize persistentStoreCoordinator=__persistentStoreCoordinator;
 @synthesize navigationController=_navigationController;
+@synthesize networkQueue=_networkQueue;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;
@@ -64,6 +65,7 @@
     [__managedObjectModel release];
     [__persistentStoreCoordinator release];
     [_navigationController release];
+    [_networkQueue release];
     
     [super dealloc];
 }
@@ -71,6 +73,7 @@
 - (void)awakeFromNib {
     RootViewController *rootViewController = (RootViewController *)[self.navigationController topViewController];
     rootViewController.managedObjectContext = self.managedObjectContext;
+    rootViewController.networkQueue = self.networkQueue;
 }
 
 - (void)saveContext {
@@ -81,6 +84,20 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         } 
     }
+}
+
+#pragma mark - Network Queue
+
+//create the network operation queue
+- (NSOperationQueue *)networkQueue {   
+    if (_networkQueue != nil) {
+        return _networkQueue;
+    }
+    
+    _networkQueue = [[NSOperationQueue alloc] init];
+    [_networkQueue setMaxConcurrentOperationCount:NSOperationQueueDefaultMaxConcurrentOperationCount];
+    
+    return _networkQueue;
 }
 
 #pragma mark - Core Data stack
@@ -99,6 +116,7 @@
         __managedObjectContext = [[NSManagedObjectContext alloc] init];
         [__managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
+    
     return __managedObjectContext;
 }
 

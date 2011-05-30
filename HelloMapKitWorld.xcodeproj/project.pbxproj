@@ -24,6 +24,18 @@
 		5A6E6E33139402A0005E94E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E29139402A0005E94E2 /* MBProgressHUD.m */; };
 		5A6E6E37139402C3005E94E2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E36139402C3005E94E2 /* Reachability.m */; };
 		5A6E6E3A13940485005E94E2 /* FLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3913940485005E94E2 /* FLLocation.m */; };
+		5A6E6E4613940B1E005E94E2 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3E13940B1E005E94E2 /* download.png */; };
+		5A6E6E4713940B1E005E94E2 /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3F13940B1E005E94E2 /* download@2x.png */; };
+		5A6E6E4813940B1E005E94E2 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4013940B1E005E94E2 /* location.png */; };
+		5A6E6E4913940B1E005E94E2 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4113940B1E005E94E2 /* location@2x.png */; };
+		5A6E6E4A13940B1E005E94E2 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4213940B1E005E94E2 /* map-marker.png */; };
+		5A6E6E4B13940B1E005E94E2 /* map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4313940B1E005E94E2 /* map-marker@2x.png */; };
+		5A6E6E4C13940B1E005E94E2 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4413940B1E005E94E2 /* map.png */; };
+		5A6E6E4D13940B1E005E94E2 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4513940B1E005E94E2 /* map@2x.png */; };
+		5A6E6E5013940BFB005E94E2 /* FLLocationDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4F13940BFB005E94E2 /* FLLocationDownloader.m */; };
+		5A6E6E5313940C09005E94E2 /* FLLocationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E5213940C09005E94E2 /* FLLocationParser.m */; };
+		5A6E6E64139415A9005E94E2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E62139415A9005E94E2 /* MapViewController.m */; };
+		5A6E6E65139415A9005E94E2 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E63139415A9005E94E2 /* MapViewController.xib */; };
 		5AD7EA801392E76B00039611 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD7EA7F1392E76B00039611 /* UIKit.framework */; };
 		5AD7EA821392E76B00039611 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD7EA811392E76B00039611 /* Foundation.framework */; };
 		5AD7EA841392E76B00039611 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD7EA831392E76B00039611 /* CoreGraphics.framework */; };
@@ -71,6 +83,23 @@
 		5A6E6E36139402C3005E94E2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5A6E6E3813940485005E94E2 /* FLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLocation.h; sourceTree = "<group>"; };
 		5A6E6E3913940485005E94E2 /* FLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLocation.m; sourceTree = "<group>"; };
+		5A6E6E3C139407AA005E94E2 /* FLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLConstants.h; sourceTree = "<group>"; };
+		5A6E6E3E13940B1E005E94E2 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		5A6E6E3F13940B1E005E94E2 /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
+		5A6E6E4013940B1E005E94E2 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		5A6E6E4113940B1E005E94E2 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+		5A6E6E4213940B1E005E94E2 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
+		5A6E6E4313940B1E005E94E2 /* map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker@2x.png"; sourceTree = "<group>"; };
+		5A6E6E4413940B1E005E94E2 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		5A6E6E4513940B1E005E94E2 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		5A6E6E4E13940BFB005E94E2 /* FLLocationDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLocationDownloader.h; sourceTree = "<group>"; };
+		5A6E6E4F13940BFB005E94E2 /* FLLocationDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLocationDownloader.m; sourceTree = "<group>"; };
+		5A6E6E5113940C09005E94E2 /* FLLocationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLocationParser.h; sourceTree = "<group>"; };
+		5A6E6E5213940C09005E94E2 /* FLLocationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLocationParser.m; sourceTree = "<group>"; };
+		5A6E6E5B13940E63005E94E2 /* FLDataDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDataDownloadDelegate.h; sourceTree = "<group>"; };
+		5A6E6E61139415A8005E94E2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = HelloMapKitWorld/MapViewController.h; sourceTree = "<group>"; };
+		5A6E6E62139415A9005E94E2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = HelloMapKitWorld/MapViewController.m; sourceTree = "<group>"; };
+		5A6E6E63139415A9005E94E2 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = HelloMapKitWorld/MapViewController.xib; sourceTree = "<group>"; };
 		5AD7EA7B1392E76B00039611 /* HelloMapKitWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMapKitWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD7EA7F1392E76B00039611 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5AD7EA811392E76B00039611 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -174,6 +203,40 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		5A6E6E3B1394077E005E94E2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5A6E6E4E13940BFB005E94E2 /* FLLocationDownloader.h */,
+				5A6E6E4F13940BFB005E94E2 /* FLLocationDownloader.m */,
+				5A6E6E5113940C09005E94E2 /* FLLocationParser.h */,
+				5A6E6E5213940C09005E94E2 /* FLLocationParser.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		5A6E6E3D13940B1E005E94E2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5A6E6E3E13940B1E005E94E2 /* download.png */,
+				5A6E6E3F13940B1E005E94E2 /* download@2x.png */,
+				5A6E6E4013940B1E005E94E2 /* location.png */,
+				5A6E6E4113940B1E005E94E2 /* location@2x.png */,
+				5A6E6E4213940B1E005E94E2 /* map-marker.png */,
+				5A6E6E4313940B1E005E94E2 /* map-marker@2x.png */,
+				5A6E6E4413940B1E005E94E2 /* map.png */,
+				5A6E6E4513940B1E005E94E2 /* map@2x.png */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		5A6E6E5A13940E45005E94E2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5A6E6E5B13940E63005E94E2 /* FLDataDownloadDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		5AD7EA701392E76B00039611 = {
 			isa = PBXGroup;
 			children = (
@@ -212,11 +275,14 @@
 			children = (
 				5A6E6E0E139402A0005E94E2 /* External */,
 				5AD7EAA71392EAC200039611 /* Core Data */,
+				5A6E6E5A13940E45005E94E2 /* Protocols */,
+				5A6E6E3B1394077E005E94E2 /* Networking */,
 				5AD7EAA51392EAA700039611 /* Views */,
 				5AD7EAA41392EA9F00039611 /* Models */,
 				5AD7EAA61392EAAD00039611 /* Controllers */,
 				5AD7EAA81392EAD000039611 /* Misc */,
 				5AD7EA881392E76B00039611 /* Supporting Files */,
+				5A6E6E3D13940B1E005E94E2 /* Images */,
 			);
 			path = HelloMapKitWorld;
 			sourceTree = "<group>";
@@ -254,6 +320,9 @@
 				5AD7EA991392E76B00039611 /* RootViewController.h */,
 				5AD7EA9A1392E76B00039611 /* RootViewController.m */,
 				5AD7EA9C1392E76B00039611 /* RootViewController.xib */,
+				5A6E6E61139415A8005E94E2 /* MapViewController.h */,
+				5A6E6E62139415A9005E94E2 /* MapViewController.m */,
+				5A6E6E63139415A9005E94E2 /* MapViewController.xib */,
 			);
 			name = Controllers;
 			path = ..;
@@ -270,6 +339,7 @@
 		5AD7EAA81392EAD000039611 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				5A6E6E3C139407AA005E94E2 /* FLConstants.h */,
 				5AD7EA901392E76B00039611 /* HelloMapKitWorldAppDelegate.h */,
 				5AD7EA911392E76B00039611 /* HelloMapKitWorldAppDelegate.m */,
 				5AD7EA961392E76B00039611 /* MainWindow.xib */,
@@ -327,6 +397,15 @@
 				5AD7EA8C1392E76B00039611 /* InfoPlist.strings in Resources */,
 				5AD7EA981392E76B00039611 /* MainWindow.xib in Resources */,
 				5AD7EA9E1392E76B00039611 /* RootViewController.xib in Resources */,
+				5A6E6E4613940B1E005E94E2 /* download.png in Resources */,
+				5A6E6E4713940B1E005E94E2 /* download@2x.png in Resources */,
+				5A6E6E4813940B1E005E94E2 /* location.png in Resources */,
+				5A6E6E4913940B1E005E94E2 /* location@2x.png in Resources */,
+				5A6E6E4A13940B1E005E94E2 /* map-marker.png in Resources */,
+				5A6E6E4B13940B1E005E94E2 /* map-marker@2x.png in Resources */,
+				5A6E6E4C13940B1E005E94E2 /* map.png in Resources */,
+				5A6E6E4D13940B1E005E94E2 /* map@2x.png in Resources */,
+				5A6E6E65139415A9005E94E2 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +432,9 @@
 				5A6E6E33139402A0005E94E2 /* MBProgressHUD.m in Sources */,
 				5A6E6E37139402C3005E94E2 /* Reachability.m in Sources */,
 				5A6E6E3A13940485005E94E2 /* FLLocation.m in Sources */,
+				5A6E6E5013940BFB005E94E2 /* FLLocationDownloader.m in Sources */,
+				5A6E6E5313940C09005E94E2 /* FLLocationParser.m in Sources */,
+				5A6E6E64139415A9005E94E2 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

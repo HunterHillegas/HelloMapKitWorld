@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import <CoreData/CoreData.h>
+
+@class FLLocationDownloader;
 
 @interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate> {
 
@@ -16,5 +17,7 @@
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSOperationQueue *networkQueue;
+@property (nonatomic, retain) FLLocationDownloader *locationDownloader;
 
 @end

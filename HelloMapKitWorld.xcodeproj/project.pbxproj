@@ -26,12 +26,6 @@
 		5A6E6E3A13940485005E94E2 /* FLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3913940485005E94E2 /* FLLocation.m */; };
 		5A6E6E4613940B1E005E94E2 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3E13940B1E005E94E2 /* download.png */; };
 		5A6E6E4713940B1E005E94E2 /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3F13940B1E005E94E2 /* download@2x.png */; };
-		5A6E6E4813940B1E005E94E2 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4013940B1E005E94E2 /* location.png */; };
-		5A6E6E4913940B1E005E94E2 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4113940B1E005E94E2 /* location@2x.png */; };
-		5A6E6E4A13940B1E005E94E2 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4213940B1E005E94E2 /* map-marker.png */; };
-		5A6E6E4B13940B1E005E94E2 /* map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4313940B1E005E94E2 /* map-marker@2x.png */; };
-		5A6E6E4C13940B1E005E94E2 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4413940B1E005E94E2 /* map.png */; };
-		5A6E6E4D13940B1E005E94E2 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4513940B1E005E94E2 /* map@2x.png */; };
 		5A6E6E5013940BFB005E94E2 /* FLLocationDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E4F13940BFB005E94E2 /* FLLocationDownloader.m */; };
 		5A6E6E5313940C09005E94E2 /* FLLocationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E5213940C09005E94E2 /* FLLocationParser.m */; };
 		5A6E6E64139415A9005E94E2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E62139415A9005E94E2 /* MapViewController.m */; };
@@ -86,12 +80,6 @@
 		5A6E6E3C139407AA005E94E2 /* FLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLConstants.h; sourceTree = "<group>"; };
 		5A6E6E3E13940B1E005E94E2 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		5A6E6E3F13940B1E005E94E2 /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
-		5A6E6E4013940B1E005E94E2 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
-		5A6E6E4113940B1E005E94E2 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
-		5A6E6E4213940B1E005E94E2 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
-		5A6E6E4313940B1E005E94E2 /* map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker@2x.png"; sourceTree = "<group>"; };
-		5A6E6E4413940B1E005E94E2 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
-		5A6E6E4513940B1E005E94E2 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
 		5A6E6E4E13940BFB005E94E2 /* FLLocationDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLocationDownloader.h; sourceTree = "<group>"; };
 		5A6E6E4F13940BFB005E94E2 /* FLLocationDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLocationDownloader.m; sourceTree = "<group>"; };
 		5A6E6E5113940C09005E94E2 /* FLLocationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLocationParser.h; sourceTree = "<group>"; };
@@ -219,12 +207,6 @@
 			children = (
 				5A6E6E3E13940B1E005E94E2 /* download.png */,
 				5A6E6E3F13940B1E005E94E2 /* download@2x.png */,
-				5A6E6E4013940B1E005E94E2 /* location.png */,
-				5A6E6E4113940B1E005E94E2 /* location@2x.png */,
-				5A6E6E4213940B1E005E94E2 /* map-marker.png */,
-				5A6E6E4313940B1E005E94E2 /* map-marker@2x.png */,
-				5A6E6E4413940B1E005E94E2 /* map.png */,
-				5A6E6E4513940B1E005E94E2 /* map@2x.png */,
 			);
 			path = Images;
 			sourceTree = SOURCE_ROOT;
@@ -399,12 +381,6 @@
 				5AD7EA9E1392E76B00039611 /* RootViewController.xib in Resources */,
 				5A6E6E4613940B1E005E94E2 /* download.png in Resources */,
 				5A6E6E4713940B1E005E94E2 /* download@2x.png in Resources */,
-				5A6E6E4813940B1E005E94E2 /* location.png in Resources */,
-				5A6E6E4913940B1E005E94E2 /* location@2x.png in Resources */,
-				5A6E6E4A13940B1E005E94E2 /* map-marker.png in Resources */,
-				5A6E6E4B13940B1E005E94E2 /* map-marker@2x.png in Resources */,
-				5A6E6E4C13940B1E005E94E2 /* map.png in Resources */,
-				5A6E6E4D13940B1E005E94E2 /* map@2x.png in Resources */,
 				5A6E6E65139415A9005E94E2 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

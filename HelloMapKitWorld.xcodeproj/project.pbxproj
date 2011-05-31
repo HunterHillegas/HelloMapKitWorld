@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A320CB41395481D00D3102C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CB31395481D00D3102C /* iTunesArtwork */; };
+		5A320CB71395482C00D3102C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CB61395482C00D3102C /* Icon.png */; };
+		5A320CB91395483300D3102C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CB81395483300D3102C /* Icon@2x.png */; };
+		5A320CBB139548F500D3102C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CBA139548F500D3102C /* Default.png */; };
+		5A320CBD139548FB00D3102C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CBC139548FB00D3102C /* Default@2x.png */; };
 		5A6E6E04139401A6005E94E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6E6E03139401A6005E94E2 /* MapKit.framework */; };
 		5A6E6E0713940250005E94E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6E6E061394024F005E94E2 /* CFNetwork.framework */; };
 		5A6E6E0913940259005E94E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6E6E0813940259005E94E2 /* SystemConfiguration.framework */; };
@@ -44,6 +49,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A320CB31395481D00D3102C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		5A320CB61395482C00D3102C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		5A320CB81395483300D3102C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		5A320CBA139548F500D3102C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		5A320CBC139548FB00D3102C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		5A6E6E03139401A6005E94E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5A6E6E061394024F005E94E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5A6E6E0813940259005E94E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -205,6 +215,11 @@
 		5A6E6E3D13940B1E005E94E2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5A320CB81395483300D3102C /* Icon@2x.png */,
+				5A320CB61395482C00D3102C /* Icon.png */,
+				5A320CBC139548FB00D3102C /* Default@2x.png */,
+				5A320CBA139548F500D3102C /* Default.png */,
+				5A320CB31395481D00D3102C /* iTunesArtwork */,
 				5A6E6E3E13940B1E005E94E2 /* download.png */,
 				5A6E6E3F13940B1E005E94E2 /* download@2x.png */,
 			);
@@ -374,6 +389,11 @@
 				5A6E6E4613940B1E005E94E2 /* download.png in Resources */,
 				5A6E6E4713940B1E005E94E2 /* download@2x.png in Resources */,
 				5A6E6E65139415A9005E94E2 /* MapViewController.xib in Resources */,
+				5A320CB41395481D00D3102C /* iTunesArtwork in Resources */,
+				5A320CB71395482C00D3102C /* Icon.png in Resources */,
+				5A320CB91395483300D3102C /* Icon@2x.png in Resources */,
+				5A320CBB139548F500D3102C /* Default.png in Resources */,
+				5A320CBD139548FB00D3102C /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

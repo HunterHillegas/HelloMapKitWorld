@@ -29,7 +29,7 @@
 }
 
 - (NSString *)subtitle {
-	return [NSString stringWithFormat:@"%@ %@", self.latitude, self.longitude];
+	return [NSString stringWithFormat:@"Lat: %@, Long: %@", self.latitude, self.longitude];
 }
 
 #pragma mark Core Data Stuff

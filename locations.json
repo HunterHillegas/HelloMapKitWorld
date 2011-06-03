@@ -3,27 +3,56 @@
         {
             "name": "Foraker Office",
             "latitude": "40.018947",
-            "longitude": "-105.238762"
+            "longitude": "-105.238762",
+			"type": "Work"
         },
         {
             "name": "Apple HQ",
             "latitude": "37.330526",
-            "longitude": "-122.029093"
+            "longitude": "-122.029093",
+			"type": "Work"
         },
         {
             "name": "Mountain Sun Pub",
             "latitude": "40.018911",
-            "longitude": "-105.275149"
+            "longitude": "-105.275149",
+			"type": "Play"
         },
         {
             "name": "Walnut Brewery",
             "latitude": "40.016798",
-            "longitude": "-105.280387"
+            "longitude": "-105.280387",
+			"type": "Play"
         },
         {
             "name": "Twisted Pine",
             "latitude": "40.020104",
-            "longitude": "-105.251395"
+            "longitude": "-105.251395",
+			"type": "Play"
+        },
+        {
+            "name": "Tahona Tequila Bistro",
+            "latitude": "40.01761",
+            "longitude": "-105.281912",
+			"type": "Play"
+        },
+        {
+            "name": "Casa Alvarez",
+            "latitude": "40.020688",
+            "longitude": "-105.251725",
+			"type": "Play"
+        },
+        {
+            "name": "The White House",
+            "latitude": "38.897678",
+            "longitude": "-77.036517",
+			"type": "Work"
+        },
+        {
+            "name": "Bellagio",
+            "latitude": "36.112026",
+            "longitude": "-115.176938",
+			"type": "Play"
         }
     ]
 }

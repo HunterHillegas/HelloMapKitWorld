@@ -52,7 +52,10 @@
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init]; //anything running in a background thread needs its own autorelease pool
     
     //create managed object context to handle this data
-    self.context = [[NSManagedObjectContext alloc] init];
+    NSManagedObjectContext *_context = [[NSManagedObjectContext alloc] init];
+    self.context = _context;
+    [_context release];
+    
 	[context setPersistentStoreCoordinator:self.storeCoordinator];
 	[context setUndoManager:nil];
 	[context setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy]; //merge by property, use in-memory over store if in conflict

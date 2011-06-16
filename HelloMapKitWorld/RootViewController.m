@@ -128,7 +128,10 @@
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    self.locationDownloader = [[FLLocationDownloader alloc] initWithOperationQueue:self.networkQueue withStoreCoordinator:[self.managedObjectContext persistentStoreCoordinator] withMainThreadContext:self.managedObjectContext];
+    FLLocationDownloader *aLocationDownloader = [[FLLocationDownloader alloc] initWithOperationQueue:self.networkQueue withStoreCoordinator:[self.managedObjectContext persistentStoreCoordinator] withMainThreadContext:self.managedObjectContext];
+    self.locationDownloader = aLocationDownloader;
+    [aLocationDownloader release];
+    
     [self.locationDownloader start];
 }
 

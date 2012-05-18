@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A11D7D41565CD70007F5BF1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A11D7D31565CD70007F5BF1 /* libz.dylib */; };
 		5A320CB41395481D00D3102C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CB31395481D00D3102C /* iTunesArtwork */; };
 		5A320CB71395482C00D3102C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CB61395482C00D3102C /* Icon.png */; };
 		5A320CB91395483300D3102C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A320CB81395483300D3102C /* Icon@2x.png */; };
@@ -16,18 +17,17 @@
 		5A6E6E0713940250005E94E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6E6E061394024F005E94E2 /* CFNetwork.framework */; };
 		5A6E6E0913940259005E94E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6E6E0813940259005E94E2 /* SystemConfiguration.framework */; };
 		5A6E6E0B1394025E005E94E2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6E6E0A1394025E005E94E2 /* MobileCoreServices.framework */; };
-		5A6E6E0D13940269005E94E2 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6E6E0C13940269005E94E2 /* libz.1.2.3.dylib */; };
-		5A6E6E2A139402A0005E94E2 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E11139402A0005E94E2 /* ASIAuthenticationDialog.m */; };
-		5A6E6E2B139402A0005E94E2 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E14139402A0005E94E2 /* ASIDataCompressor.m */; };
-		5A6E6E2C139402A0005E94E2 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E16139402A0005E94E2 /* ASIDataDecompressor.m */; };
-		5A6E6E2D139402A0005E94E2 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E18139402A0005E94E2 /* ASIDownloadCache.m */; };
-		5A6E6E2E139402A0005E94E2 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E1A139402A0005E94E2 /* ASIFormDataRequest.m */; };
-		5A6E6E2F139402A0005E94E2 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E1C139402A0005E94E2 /* ASIHTTPRequest.m */; };
-		5A6E6E30139402A0005E94E2 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E20139402A0005E94E2 /* ASIInputStream.m */; };
-		5A6E6E31139402A0005E94E2 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E22139402A0005E94E2 /* ASINetworkQueue.m */; };
-		5A6E6E32139402A0005E94E2 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E26139402A0005E94E2 /* JSONKit.m */; };
-		5A6E6E33139402A0005E94E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E29139402A0005E94E2 /* MBProgressHUD.m */; };
-		5A6E6E37139402C3005E94E2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E36139402C3005E94E2 /* Reachability.m */; };
+		5A6E6E2A139402A0005E94E2 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E11139402A0005E94E2 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E2B139402A0005E94E2 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E14139402A0005E94E2 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E2C139402A0005E94E2 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E16139402A0005E94E2 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E2D139402A0005E94E2 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E18139402A0005E94E2 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E2E139402A0005E94E2 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E1A139402A0005E94E2 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E2F139402A0005E94E2 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E1C139402A0005E94E2 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E30139402A0005E94E2 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E20139402A0005E94E2 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E31139402A0005E94E2 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E22139402A0005E94E2 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E32139402A0005E94E2 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E26139402A0005E94E2 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E33139402A0005E94E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E29139402A0005E94E2 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5A6E6E37139402C3005E94E2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E36139402C3005E94E2 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5A6E6E3A13940485005E94E2 /* FLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3913940485005E94E2 /* FLLocation.m */; };
 		5A6E6E4613940B1E005E94E2 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3E13940B1E005E94E2 /* download.png */; };
 		5A6E6E4713940B1E005E94E2 /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E6E3F13940B1E005E94E2 /* download@2x.png */; };
@@ -49,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A11D7D31565CD70007F5BF1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5A320CB31395481D00D3102C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		5A320CB61395482C00D3102C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		5A320CB81395483300D3102C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		5A6E6E061394024F005E94E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5A6E6E0813940259005E94E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5A6E6E0A1394025E005E94E2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		5A6E6E0C13940269005E94E2 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		5A6E6E10139402A0005E94E2 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		5A6E6E11139402A0005E94E2 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		5A6E6E12139402A0005E94E2 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A6E6E0D13940269005E94E2 /* libz.1.2.3.dylib in Frameworks */,
+				5A11D7D41565CD70007F5BF1 /* libz.dylib in Frameworks */,
 				5A6E6E0B1394025E005E94E2 /* MobileCoreServices.framework in Frameworks */,
 				5A6E6E0913940259005E94E2 /* SystemConfiguration.framework in Frameworks */,
 				5A6E6E0713940250005E94E2 /* CFNetwork.framework in Frameworks */,
@@ -254,7 +254,7 @@
 		5AD7EA7E1392E76B00039611 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A6E6E0C13940269005E94E2 /* libz.1.2.3.dylib */,
+				5A11D7D31565CD70007F5BF1 /* libz.dylib */,
 				5A6E6E0A1394025E005E94E2 /* MobileCoreServices.framework */,
 				5A6E6E0813940259005E94E2 /* SystemConfiguration.framework */,
 				5A6E6E061394024F005E94E2 /* CFNetwork.framework */,
@@ -362,7 +362,7 @@
 		5AD7EA721392E76B00039611 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 5AD7EA751392E76B00039611 /* Build configuration list for PBXProject "HelloMapKitWorld" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -473,7 +473,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -488,7 +488,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -498,15 +498,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloMapKitWorld/HelloMapKitWorld-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HelloMapKitWorld/HelloMapKitWorld-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -516,14 +518,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloMapKitWorld/HelloMapKitWorld-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HelloMapKitWorld/HelloMapKitWorld-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

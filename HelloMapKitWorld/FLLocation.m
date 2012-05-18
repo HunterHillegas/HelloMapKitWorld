@@ -61,7 +61,6 @@
 	[fetchRequest setEntity:entity]; 
 	[fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name = %@", aName]];
 	NSArray *existingItems = [context executeFetchRequest:fetchRequest error:&error]; 
-	[fetchRequest release];
     
     return [existingItems lastObject];
 }

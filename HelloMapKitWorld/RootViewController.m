@@ -35,7 +35,6 @@
 
     UIBarButtonItem *downloadButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"download.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(requestLocationDownloads)];
     self.navigationItem.rightBarButtonItem = downloadButton;
-    [downloadButton release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -58,7 +57,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 
@@ -92,7 +91,6 @@
     mapView.locations = [self.fetchedResultsController fetchedObjects];
     mapView.selectedIndex = indexPath.row;
     [self.navigationController pushViewController:mapView animated:YES];
-    [mapView release];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,14 +107,6 @@
     // For example: self.myOutlet = nil;
 }
 
-- (void)dealloc {
-    [__fetchedResultsController release];
-    [__managedObjectContext release];
-    [_networkQueue release];
-    [_locationDownloader release];
-    
-    [super dealloc];
-}
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     FLLocation *managedObject = (FLLocation *)[self.fetchedResultsController objectAtIndexPath:indexPath];
@@ -130,7 +120,6 @@
     
     FLLocationDownloader *aLocationDownloader = [[FLLocationDownloader alloc] initWithOperationQueue:self.networkQueue withStoreCoordinator:[self.managedObjectContext persistentStoreCoordinator] withMainThreadContext:self.managedObjectContext];
     self.locationDownloader = aLocationDownloader;
-    [aLocationDownloader release];
     
     [self.locationDownloader start];
 }
@@ -166,10 +155,6 @@
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     
-    [aFetchedResultsController release];
-    [fetchRequest release];
-    [sortDescriptor release];
-    [sortDescriptors release];
 
 	NSError *error = nil;
 	if (![self.fetchedResultsController performFetch:&error]) {

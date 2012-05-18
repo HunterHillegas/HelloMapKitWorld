@@ -16,9 +16,9 @@
 	NSManagedObjectContext *mainThreadContext;
 }
 
-@property (nonatomic, retain) NSOperationQueue *operationQueue;
-@property (nonatomic, retain) NSPersistentStoreCoordinator *storeCoordinator;
-@property (nonatomic, retain) NSManagedObjectContext *mainThreadContext;
+@property (nonatomic, strong) NSOperationQueue *operationQueue;
+@property (nonatomic, strong) NSPersistentStoreCoordinator *storeCoordinator;
+@property (nonatomic, strong) NSManagedObjectContext *mainThreadContext;
 
 - (id)initWithOperationQueue:(NSOperationQueue *)aOperationQueue withStoreCoordinator:(NSPersistentStoreCoordinator *)aCoordinator withMainThreadContext:(NSManagedObjectContext *)aMainThreadContext;
 

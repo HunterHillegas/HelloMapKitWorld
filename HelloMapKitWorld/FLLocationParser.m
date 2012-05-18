@@ -49,37 +49,36 @@
 }
 
 - (void)main {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init]; //anything running in a background thread needs its own autorelease pool
+	@autoreleasepool { //anything running in a background thread needs its own autorelease pool
     
     //create managed object context to handle this data
-    NSManagedObjectContext *_context = [[NSManagedObjectContext alloc] init];
-    self.context = _context;
-    [_context release];
-    
+        NSManagedObjectContext *_context = [[NSManagedObjectContext alloc] init];
+        self.context = _context;
+        
 	[context setPersistentStoreCoordinator:self.storeCoordinator];
 	[context setUndoManager:nil];
 	[context setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy]; //merge by property, use in-memory over store if in conflict
 
-    //register for save notifications to push changes to main thread / UI
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeContextChangesForNotification:) name:NSManagedObjectContextDidSaveNotification object:self.context];
-    
-    //parse JSON
-    NSError *parseError;
-    JSONDecoder *decoder = [JSONDecoder decoder];
-    id parsedResponse = [decoder objectWithData:[[self.completedRequest responseString] dataUsingEncoding:NSUTF8StringEncoding] error:&parseError];
-    id locations = [parsedResponse valueForKey:@"locations"];
-    
-    //send data to method that will create and save managed objects
-    [FLLocation batchUpdateOrCreateWithArray:locations inContext:self.context];
-    
-    //send message to delegate, if it resonds to message
+        //register for save notifications to push changes to main thread / UI
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeContextChangesForNotification:) name:NSManagedObjectContextDidSaveNotification object:self.context];
+        
+        //parse JSON
+        NSError *parseError;
+        JSONDecoder *decoder = [JSONDecoder decoder];
+        id parsedResponse = [decoder objectWithData:[[self.completedRequest responseString] dataUsingEncoding:NSUTF8StringEncoding] error:&parseError];
+        id locations = [parsedResponse valueForKey:@"locations"];
+        
+        //send data to method that will create and save managed objects
+        [FLLocation batchUpdateOrCreateWithArray:locations inContext:self.context];
+        
+        //send message to delegate, if it resonds to message
 	if ([self.completionDelegate respondsToSelector:@selector(parseSuccessfulWithOptions:)]) {
 		[(NSObject *)self.completionDelegate performSelectorOnMainThread:@selector(parseSuccessfulWithOptions:) withObject:nil waitUntilDone:NO];
 	} else {
 		NSLog(@"Delegate Does Not Respond to parseSuccessfulWithOptions: Selector");
 	}
         
-	[pool drain]; //drain the autorelease pool
+	} //drain the autorelease pool
 }
 
 - (void)dealloc {
@@ -87,13 +86,7 @@
     
     completionDelegate = nil;
     
-    [storeCoordinator release];
-    [context release];
-    [mainThreadContext release];
-    [options release];
-    [completedRequest release];
 	
-	[super dealloc];
 }
 
 @end

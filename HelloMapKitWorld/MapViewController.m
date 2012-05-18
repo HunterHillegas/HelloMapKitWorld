@@ -32,10 +32,7 @@
     self.locationMapView.delegate = nil;
     [self.locationMapView removeAnnotations:self.locationMapView.annotations];
     
-    [_locationMapView release];
-    [_locations release];
     
-    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,7 +84,7 @@
 	MKPinAnnotationView *pinAnnotation = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"Pin"];
     
 	if (pinAnnotation == nil) {
-		pinAnnotation = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Pin"] autorelease];
+		pinAnnotation = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Pin"];
 	} else {
 		pinAnnotation.annotation = annotation;
 	}

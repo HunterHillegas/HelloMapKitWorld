@@ -36,7 +36,7 @@
 }
 
 - (void)parseResponse:(ASIHTTPRequest *)completedRequest {	
-    FLLocationParser *requestParser = [[[FLLocationParser alloc] initWithCoordinator:self.storeCoordinator andMainThreadContext:self.mainThreadContext] autorelease];
+    FLLocationParser *requestParser = [[FLLocationParser alloc] initWithCoordinator:self.storeCoordinator andMainThreadContext:self.mainThreadContext];
     requestParser.completedRequest = completedRequest;
     [self.operationQueue addOperation:requestParser];
 }
@@ -53,12 +53,5 @@
 	NSLog(@"Download Error: %@", [request error]);
 }
 
-- (void)dealloc {	
-	[operationQueue release];
-    [mainThreadContext release];
-    [storeCoordinator release];
-	
-	[super dealloc];
-}
 
 @end

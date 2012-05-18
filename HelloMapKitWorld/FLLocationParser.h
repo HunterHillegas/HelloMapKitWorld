@@ -20,15 +20,15 @@
     NSDictionary *options;
     ASIHTTPRequest *completedRequest;
     
-    id completionDelegate;
+    id __weak completionDelegate;
 }
 
-@property (nonatomic, retain) NSPersistentStoreCoordinator *storeCoordinator;
-@property (nonatomic, retain) NSManagedObjectContext *context;
-@property (nonatomic, retain) NSManagedObjectContext *mainThreadContext;
-@property (nonatomic, retain) NSDictionary *options;
-@property (nonatomic, retain) ASIHTTPRequest *completedRequest;
-@property (nonatomic, assign) id<FLDataDownloadDelegate> completionDelegate;
+@property (nonatomic, strong) NSPersistentStoreCoordinator *storeCoordinator;
+@property (nonatomic, strong) NSManagedObjectContext *context;
+@property (nonatomic, strong) NSManagedObjectContext *mainThreadContext;
+@property (nonatomic, strong) NSDictionary *options;
+@property (nonatomic, strong) ASIHTTPRequest *completedRequest;
+@property (nonatomic, weak) id<FLDataDownloadDelegate> completionDelegate;
 
 - (id)initWithCoordinator:(NSPersistentStoreCoordinator *)aCoordinator andMainThreadContext:(NSManagedObjectContext *)theMainThreadContext;
 - (id)initWithCoordinator:(NSPersistentStoreCoordinator *)aCoordinator andMainThreadContext:(NSManagedObjectContext *)theMainThreadContext withDelegate:(id)aCompletionDelegate;

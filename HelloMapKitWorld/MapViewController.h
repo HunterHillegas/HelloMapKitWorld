@@ -13,8 +13,8 @@
     
 }
 
-@property (nonatomic, retain) IBOutlet MKMapView *locationMapView;
-@property (nonatomic, retain) NSArray *locations;
+@property (nonatomic, strong) IBOutlet MKMapView *locationMapView;
+@property (nonatomic, strong) NSArray *locations;
 @property (nonatomic) NSInteger selectedIndex;
 
 @end

@@ -15,9 +15,9 @@
 
 }
 
-@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) NSOperationQueue *networkQueue;
-@property (nonatomic, retain) FLLocationDownloader *locationDownloader;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSOperationQueue *networkQueue;
+@property (nonatomic, strong) FLLocationDownloader *locationDownloader;
 
 @end

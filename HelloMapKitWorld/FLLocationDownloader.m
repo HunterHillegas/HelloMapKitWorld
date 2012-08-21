@@ -7,20 +7,24 @@
 //
 
 #import "FLLocationDownloader.h"
+#import "FLLocation.h"
 
-#import "FLLocationParser.h"
+@interface FLLocationDownloader ()
+
+@property (nonatomic, strong) NSOperationQueue *operationQueue;
+@property (nonatomic, strong) NSManagedObjectContext *privateContext;
+
+@end
 
 @implementation FLLocationDownloader
 
-@synthesize operationQueue;
-@synthesize storeCoordinator;
-@synthesize mainThreadContext;
-
-- (id)initWithOperationQueue:(NSOperationQueue *)aOperationQueue withStoreCoordinator:(NSPersistentStoreCoordinator *)aCoordinator withMainThreadContext:(NSManagedObjectContext *)aMainThreadContext {
+- (id)initWithOperationQueue:(NSOperationQueue *)aOperationQueue withMainThreadContext:(NSManagedObjectContext *)aMainThreadContext {
     if ((self = [super init])) {
 		self.operationQueue = aOperationQueue;
-		self.storeCoordinator = aCoordinator;
-        self.mainThreadContext = aMainThreadContext;
+
+        NSManagedObjectContext *__privateContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        self.privateContext = __privateContext;
+        [self.privateContext setParentContext:aMainThreadContext];
     }
     return self;
 }
@@ -29,29 +33,17 @@
 	NSLog(@"Request Locations: %@", kAssetURL);
 	
 	NSURL *url = [NSURL URLWithString:kAssetURL];
-	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	[request setDelegate:self];
-    
-	[operationQueue addOperation:request];
-}
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url] queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            id parsedResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            id locations = [parsedResponse valueForKey:@"locations"];
 
-- (void)parseResponse:(ASIHTTPRequest *)completedRequest {	
-    FLLocationParser *requestParser = [[FLLocationParser alloc] initWithCoordinator:self.storeCoordinator andMainThreadContext:self.mainThreadContext];
-    requestParser.completedRequest = completedRequest;
-    [self.operationQueue addOperation:requestParser];
+            //send data to method that will create and save managed objects
+            [self.privateContext performBlockAndWait:^{
+                [FLLocation batchUpdateOrCreateWithArray:locations inContext:self.privateContext];
+            }];
+        });
+    }];
 }
-
-- (void)requestFinished:(ASIHTTPRequest *)request {
-	if (request.responseStatusCode == 200) {
-        [self parseResponse:request];
-	} else {
-		NSLog(@"%@ Download Response Code Was Not 200: %d", request.url, request.responseStatusCode);
-	}
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request {
-	NSLog(@"Download Error: %@", [request error]);
-}
-
 
 @end

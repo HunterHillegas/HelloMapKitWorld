@@ -20,11 +20,6 @@
 
 @implementation RootViewController
 
-@synthesize fetchedResultsController=__fetchedResultsController;
-@synthesize managedObjectContext=__managedObjectContext;
-@synthesize networkQueue=_networkQueue;
-@synthesize locationDownloader=_locationDownloader;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -93,21 +88,6 @@
     [self.navigationController pushViewController:mapView animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
-}
-
-
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     FLLocation *managedObject = (FLLocation *)[self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = managedObject.name;
@@ -118,7 +98,7 @@
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    FLLocationDownloader *aLocationDownloader = [[FLLocationDownloader alloc] initWithOperationQueue:self.networkQueue withStoreCoordinator:[self.managedObjectContext persistentStoreCoordinator] withMainThreadContext:self.managedObjectContext];
+    FLLocationDownloader *aLocationDownloader = [[FLLocationDownloader alloc] initWithOperationQueue:self.networkQueue withMainThreadContext:self.managedObjectContext];
     self.locationDownloader = aLocationDownloader;
     
     [self.locationDownloader start];
@@ -127,8 +107,8 @@
 #pragma mark - Fetched results controller
 
 - (NSFetchedResultsController *)fetchedResultsController {
-    if (__fetchedResultsController != nil) {
-        return __fetchedResultsController;
+    if (_fetchedResultsController != nil) {
+        return _fetchedResultsController;
     }
     
     /*
@@ -161,7 +141,7 @@
 	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 	}
     
-    return __fetchedResultsController;
+    return _fetchedResultsController;
 }    
 
 #pragma mark - Fetched results controller delegate

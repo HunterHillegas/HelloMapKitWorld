@@ -8,24 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ASIHTTPRequest.h"
+@interface FLLocationDownloader : NSObject
 
-@interface FLLocationDownloader : NSObject {
-    NSOperationQueue *operationQueue;
-    NSPersistentStoreCoordinator *storeCoordinator;
-	NSManagedObjectContext *mainThreadContext;
-}
-
-@property (nonatomic, strong) NSOperationQueue *operationQueue;
-@property (nonatomic, strong) NSPersistentStoreCoordinator *storeCoordinator;
-@property (nonatomic, strong) NSManagedObjectContext *mainThreadContext;
-
-- (id)initWithOperationQueue:(NSOperationQueue *)aOperationQueue withStoreCoordinator:(NSPersistentStoreCoordinator *)aCoordinator withMainThreadContext:(NSManagedObjectContext *)aMainThreadContext;
+- (id)initWithOperationQueue:(NSOperationQueue *)aOperationQueue withMainThreadContext:(NSManagedObjectContext *)aMainThreadContext;
 
 - (void)start;
-
-- (void)requestFinished:(ASIHTTPRequest *)request;
-- (void)requestFailed:(ASIHTTPRequest *)request;
-- (void)parseResponse:(ASIHTTPRequest *)completedRequest;
 
 @end
